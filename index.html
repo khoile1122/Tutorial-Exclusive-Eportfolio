@@ -7,7 +7,16 @@
     <title>Khoi Le</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/eabd678fcf.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("eTE6ily6sze56hO__");
+        })();
+    </script>
 </head>
+
 <body>
     <section id="landing-page">
         <nav>
@@ -108,18 +117,18 @@
                 <h3 class="modal__sub-title modal__sub-title--contact">
                     I'am currently open to new opportunities.
                 </h3>
-                <form id="contact__form" action="">
+                <formevent)">
                     <div class="form__item">
                         <label class="form__item--label">Name</label>
-                        <input class="input" name="user_name" type="text" required></input>
+                        <input class="input" name="user_name" type="text"></input>
                     </div>
                     <div class="form__item">
                         <label class="form__item--label" >Email</label>
-                        <input class="input" name="user_email" type="email" required></input>
+                        <input class="input" name="user_email" type="email"></input>
                     </div>
                     <div class="form__item">
                         <label class="form__item--label">Message</label>
-                        <textarea class="input" name="message" type="text" required></textarea>
+                        <textarea class="input" name="message" type="text"></textarea>
                     </div>
                     <button id="contact__submit" class="form__submit">
                         Send it my way
