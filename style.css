@@ -447,7 +447,7 @@ nav {
     font-weight: 700;
     text-align: center;
     padding: 28px;
-    display: none;
+    visibility: visible;
     }
 
 .modal__overlay--visible {
