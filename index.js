@@ -14,7 +14,7 @@ function contact(event) {
             event.target,
             'eTE6ily6sze56hO__'
         ).then(() => {
-            throw new Error("error");
+            
             loading.classList.remove("modal__overlay--visible");
             success.classList += " modal__overlay--visible";
         }).catch (() => {
