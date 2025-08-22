@@ -2,10 +2,10 @@
 //service_9dpices
 //eTE6ily6sze56hO__
 
-function contact() {
+function contact(event) {
     event.preventDefault();
     const loading = document.querySelector('.modal__overlay--loading')
-    const success = document.querySelector('.model__overlay--success')
+    const success = document.querySelector('.modal__overlay--success')
     loading.classList += " modal__overlay--visible"
     emailjs
        .sendForm(
@@ -22,5 +22,16 @@ function contact() {
             alert(
                 "The email services is temprarily unavailable. Please contact me directly on email@email.com"
             );
-        })
+        });
+}
+
+let isModalOpen = false;
+function toggleModal() {
+    if (isModalOpen) {
+        isModalOpen = false;
+        return document.body.classList.remove("modal--open")
+    }
+    isModalOpen = !isModalOpen;
+    document.body.classList += " modal--open";
+    
 }
